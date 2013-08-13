@@ -15,7 +15,7 @@ RUN echo "deb ftp://mirror.hetzner.de/ubuntu/packages quantal main restricted un
 # Update the package repository
 RUN apt-get update
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y curl
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y curl psmisc
 
 # Install Dockyard
 RUN curl -o /usr/local/bin/dockyard https://raw.github.com/dynport/dockyard/master/dockyard

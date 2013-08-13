@@ -27,11 +27,6 @@ You can mount the database directory as a volume to persist your data:
 But before you can do so you first need to create the source folder: `mkdir -p $HOME/.d_volumes/postgres`
 
 
-## TODO
-
-- Clean Shutdown of the `postgresql` process on SIGTERM (maybe using `trap` in the start script)
-
-
 ## Meta
 
 Build with docker version `0.5.1`
